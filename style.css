@@ -1,0 +1,105 @@
+header {
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+    border: 2px solid #122932;
+    border-radius: 15px 50px;
+}
+body {
+    background-color: #e2d0e7;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-family: 'patrick hand', cursive;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #122932;
+}
+p {
+    font-family: 'patrick hand', cursive;
+    text-align: center;
+    color: #122932;
+}
+button {
+    background-color: #1a4d46;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 6px solid #122932;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    color: #9fe4db;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+}
+button a {
+    color: #9fe4db;
+    text-decoration: none;
+}
+footer {
+    margin-top: 40px;
+    color: #1e312f;
+    background-color: #f3e9c8;
+    border-radius: 15px 50px;
+    border: 2px solid #1e312f;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'patrick hand', cursive;
+    line-height: 0.5px;
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+}
+
+.CME {
+    background-color: aliceblue;
+    color: #322312;
+    margin: 10px;
+    width: 100%;
+    border: 6px solid darkmagenta;
+}
+img {
+    border: 2px solid #122932;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+.blob {
+    display: inline-block;      
+    padding: 14px 26px;
+    background: #6b0fd4;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    font-family: 'Patrick Hand', cursive;
+    border: 2px solid #122932;
+}
+div {
+    display: inline-block;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    border-color: #122932;
+    background: #eeb3d0;
+}
+.HC {
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    font-family: 'patrick hand' , cursive;
+    text-align: center;
+    color: #122932;
+    display: inline-block, block;
+    background: #eeb3d0;
+
+}
+.para2 {
+    background-color: #dacda4;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 2px solid #322112;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    width: auto;
+    height: 100px;
+    margin: 25px;
+
+}
+.para2 a {
+    color: #322312;
+}

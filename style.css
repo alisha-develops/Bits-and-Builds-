@@ -1,7 +1,30 @@
 header {
     background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-color: #9fe4db;
     border: 2px solid #122932;
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
+} 
+nav {
     border-radius: 15px 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navB {
+    background-color: #a2dad2;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: 4px solid #122932;
+    border-radius: 58% 42% 52% 48% / 48% 58% 42% 52%;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+}
+nav .navB a {
+    color: #07332d;
+    text-decoration: none;
 }
 body {
     background-color: #e2d0e7;
@@ -65,12 +88,14 @@ img {
     display: block;
 }
 .blob {
-    display: inline-block;      
-    padding: 14px 26px;
-    background: #6b0fd4;
-    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    display: block;      
+    background: #a872e6;
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
     font-family: 'Patrick Hand', cursive;
-    border: 2px solid #122932;
+    border: 3px solid #122932;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 10px;
 }
 div {
     display: inline-block;

@@ -1,0 +1,214 @@
+header {
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-color: #9fe4db;
+    border: 2px solid #122932;
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
+} 
+nav {
+    border-radius: 15px 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navB {
+    background-color: #a2dad2;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 10px 5px;
+    border: 4px solid #122932;
+    border-radius: 58% 42% 52% 48% / 48% 58% 42% 52%;
+    cursor: pointer;
+    margin: 0px 10px;
+    display: inline-block;
+}
+nav .navB a {
+    color: #07332d;
+    text-decoration: none;
+}
+.nav-btn {
+    margin-left: auto;
+}
+body {
+    background-color: #e2d0e7;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-family: 'patrick hand', cursive;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #122932;
+}
+p {
+    font-family: 'patrick hand', cursive;
+    text-align: center;
+    color: #122932;
+}
+button {
+    background-color: #1a4d46;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 6px solid #122932;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    color: #9fe4db;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+}
+button a {
+    color: #9fe4db;
+    text-decoration: none;
+}
+footer {
+    margin-top: 40px;
+    color: #1e312f;
+    background-color: #f3e9c8;
+    border-radius: 15px 50px;
+    border: 2px solid #1e312f;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'patrick hand', cursive;
+    line-height: 0.5px;
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+}
+
+.CME {
+    background-color: aliceblue;
+    color: #322312;
+    margin: 10px;
+    width: 100%;
+    border: 6px solid darkmagenta;
+}
+img {
+    border: 2px solid #122932;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    animation: floaty 3s ease-in-out infinite;
+
+}
+@keyframes floaty {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.blob {
+    display: block;      
+    background: #a872e6;
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
+    font-family: 'Patrick Hand', cursive;
+    border: 3px solid #122932;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 10px;
+}
+div {
+    display: inline-block;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    border-color: #122932;
+    background: #eeb3d0;
+}
+.HC {
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    font-family: 'patrick hand' , cursive;
+    text-align: center;
+    color: #122932;
+    display: inline-block, block;
+    background: #eeb3d0;
+
+}
+.para2 {
+    background-color: #dacda4;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 2px solid #322112;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    width: auto;
+    height: 100px;
+    margin: 25px;
+    animation: floaty 3s ease-in-out infinite;
+
+}
+@keyframes floaty {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.para2 a {
+    color: #322312;
+}
+.music-icon { 
+    position: fixed; 
+    bottom: 30px; right: 30px; 
+    font-size: 35px; background: rgb(226, 169, 45); 
+    width: 60px; 
+    height: 60px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    cursor: pointer; 
+    z-index: 9999; 
+    transition: transform 0.3s ease;
+}
+.music-icon:hover { 
+    transform: scale(1.1); 
+}
+.is-playing { 
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse { 
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.15); } 
+    100% { transform: scale(1); }}
+
+.horrormode {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.horrormode button {
+    background-color: #281455;
+    font-family: 'patrick hand', cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 6px solid #330000;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    color: #dfff29;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+    transition: background-color 1s ease-out, transform 1s ease-out;
+}
+.horrormode button:hover {
+    background-color: #ffffff;
+    color: #330000;
+    transform: scale(1.1);
+}
+div.cards {
+background-color: #e2d0e7;
+}
+.cards img {
+    width: auto;
+    height: auto;
+    border: 2px solid #122932;
+    border-radius: 10px;
+    display: flex;
+}
+#success {
+    font-family: 'patrick hand', cursive;
+    text-align: center;
+    color: #122932;
+    margin-top: 10px;
+}
+
+/* Horror Mode Styles will come here */

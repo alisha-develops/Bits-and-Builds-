@@ -22,7 +22,3 @@ Bits & Builds is a personal learning space where I experiment with web developme
 ## Author
 Built by Alisha 🌱  
 Learning, experimenting, and improving step by step.
-
-## ⏱ Hackatime Stats
-![Hackatime Stats](https://github-readme-stats.hackclub.dev/api/wakatime?username=24878&api_domain=hackatime.hackclub.com&theme=darcula&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8)
-

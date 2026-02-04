@@ -7,6 +7,9 @@ body {
     font-family: 'patrick hand' , cursive;
 }
 
+#section1, #section2, #section3 {
+  text-alig: center;
+}
 
 /* Common Elements */
 h1 {
@@ -373,3 +376,4 @@ background-color: #e2d0e7;
 
 
 /* Horror Mode Styl es will come here */
+

@@ -1,0 +1,385 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: #e2d0e7;
+    margin: 20px;
+}
+
+
+/* Other Elements */
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: xx-large;
+    color: #122932;
+}
+
+p {
+    font-family: "Pangolin", cursive;
+    text-align: center;
+    color: #122932;
+}
+
+.bubblybox {
+    display: inline-block;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    border-color: #122932;
+    background: #eeb3d0;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+h5 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 200;
+    margin: 10px;
+    padding: 5px;
+}
+
+.profilep {
+    border: 2px solid #122932;
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    animation: floaty 3s ease-in-out infinite;
+
+}
+@keyframes floaty {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.HC {
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+    font-family: "Pangolin", cursive;
+    text-align: center;
+    color: #122932;
+    display: inline-block;
+    background: #eeb3d0;
+
+}
+
+/* General Button/Link Reset */
+button {
+    background-color: #1a4d46;
+    font-family: "Pangolin", cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 6px solid #122932;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    color: #9fe4db;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+}
+
+button a {
+    color: #bb067f;
+    text-decoration: none;
+}
+
+
+/* LAYOUT CONTAINERS (Header, Nav, Footer) */
+header {
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-color: #9fe4db;
+    border: 2px solid #122932;
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
+} 
+
+
+/*  Nav and Footer starts here here*/
+nav {
+    border-radius: 15px 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navB {
+    background-color: #a2dad2;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 300;
+    padding: 10px 5px;
+    border: 4px solid #122932;
+    border-radius: 58% 42% 52% 48% / 48% 58% 42% 52%;
+    cursor: pointer;
+    margin: 0px 10px;
+    display: inline-block;
+}
+nav .navB a {
+    color: #07332d;
+    text-decoration: none;
+}
+
+.nav-btn {
+    margin-left: auto;
+}
+
+.blob {
+    display: block;      
+    background: #a872e6;
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
+    font-family: "Berkshire Swash", serif;
+    border: 3px solid #122932;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 10px;
+}
+
+.dot-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+  border-radius: 10px 10px;
+  border: #07332d solid 1px;
+  background-color: #5c11b3;
+}
+
+.dot-nav a {
+  width: 12px;
+  height: 12px;
+  background-color: #84e089; 
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dot-nav a:hover {
+  background-color: #b8cc07;
+  transform: scale(1.3);
+}
+  
+/*section 1,2,3 is here*/
+#section2, #section1, #section3 {
+    text-align: center;
+}
+
+
+
+/*Footer Detailing is here*/
+footer {
+    margin-top: 40px;
+    color: #1e312f;
+    border-radius: 15px 50px;
+    border: 2px solid #1e312f;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'patrick hand', cursive;
+    line-height: 25px;
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.0QNWg87AQwuJmeg9K5ogIAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+    padding: 15px 50px;
+}
+
+.footerbtncontainer {
+  display: flex;
+  flex-direction: row;  
+  align-items:center;   
+  justify-content: center;
+  gap: 1px;
+  margin-top: 10px;
+  background-color: transparent;
+  animation: floaty 3s ease-in-out infinite;
+  flex-wrap: wrap;
+}
+
+.gmail, .linkedin, .github{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background-color: #a9d2e9;
+  border: 2px solid #1e312f;
+  border-radius: 12px;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+  justify-content: center;    
+
+}
+
+.gmail-icon, .linkedin-icon, .github-icon {
+  border-radius: 12%;
+  border: 2px solid #3f5250;
+  background-color: #1e312f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CME {
+    background-color: rgb(39, 141, 148);
+    color: #230e49;;
+    border: 5px solid rgb(54, 4, 50);
+    border-radius: 80% 20% 60% 40% / 30% 70% 40% 60%;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 10px;
+    display: block;
+    animation: floaty 3s ease-in-out infinite;
+}
+
+
+/* Floating Music Icon starts here */
+.music-icon { 
+    position: fixed; 
+    bottom: 30px; right: 30px; 
+    font-size: 35px; background: rgb(226, 169, 45); 
+    width: 60px; 
+    height: 60px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    cursor: pointer; 
+    z-index: 9999; 
+    transition: transform 0.3s ease;
+}
+
+.music-icon:hover { 
+    transform: scale(1.1); 
+}
+
+.is-playing { 
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse { 
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.15); } 
+    100% { transform: scale(1); }
+}
+
+
+ /* SPECIAL MODES & ANIMATIONS*/
+.horrormode {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.horrormode button {
+    background-color: #281455;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 6px solid #330000;
+    border-radius:  60% 40% 55% 45% / 45% 60% 40% 55%;
+    color: #dfff29;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+    transition: background-color 1s ease-out, transform 1s ease-out;
+}
+
+.horrormode button:hover {
+    background-color: #ffffff;
+    color: #330000;
+    transform: scale(1.1);
+}
+
+/* ROJECT CARDS SECTION*/
+.project.container {
+    background-color: #d1b3e0;
+    border: 2px solid #122932;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.cards {
+    width: 600px;
+    max-height: 85vw;
+    flex: 0 0 auto;
+    background-color: #f3e6fa;
+    border: 2px solid #122932;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;   
+    object-fit: cover;
+    display: block;  
+}
+
+.cardcontext {
+    font-family: "Pangolin", cursive;
+    text-align: center;
+    color: #122932;
+    margin-top: 30px;
+    background-color: transparent;
+}
+
+.projectaccessbtn {
+    font-family: "Pangolin", cursive;
+    font-weight: 300;
+    padding: 14px 28px;
+    border: 6px solid #643d03;
+    background-color: rgb(233, 197, 106);
+    border-radius: 10px 10px;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+    color: #322312;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div.cards {
+background-color: #e2d0e7;
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #122932;
+    border-radius: 10px;
+    display: block;
+}
+
+.success {
+    font-family: "Pangolin", cursive;
+    text-align: center;
+    color: #122932;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE DESIGN (Media Queries)*/
+@media screen and (max-width: 768px) {
+    .cards {
+        flex: 0 0 65vw; 
+        padding: 15px;  
+    }
+    
+    .project-container {
+        gap: 15px;      
+        padding: 10px;
+    }
+}
+
+/* Horror Mode Styl es will come here */

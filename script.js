@@ -1,4 +1,8 @@
-// Initial calls
+// This site is still underconstructuon. See anyway?
+window.onload = function() {
+    alert("This site is still underconstructuon. See anyway?");
+};
+
 const mainText = "WELCOME TO MY…";
 const main = document.getElementById("intro-main");
 const namePart = document.getElementById("intro-name");
@@ -68,6 +72,7 @@ function toggleMusic() {
     }
 }
 musicIcon.addEventListener('click', toggleMusic);
+
 
 
 

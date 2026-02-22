@@ -407,7 +407,7 @@ body.horror-mode footer {
 }
 
 body.horror-mode .profilep {
-    content: url("images/horrorme.png");
+    content: url("horrorme.png");
 }
 
 body.horror-mode a {
@@ -465,4 +465,5 @@ body.horror-mode .projectaccessbtn {
 }
 body.horror-mode .music-icon{
     background-color: #07332d;
+
 }

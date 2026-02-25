@@ -4,14 +4,10 @@ Bits & Builds is a personal learning space where I experiment with web developme
 
 
 ## What this repository is
-- A place to learn by building
-- Small experiments with HTML, CSS, and JavaScript
-- A growing personal website
+Imagine a place where all my small experiments, web bits, and fun builds live together.. that’s this project.
+It’s kind of like a digital scrapbook of ideas, code snippets, layouts, styles, and tiny apps.
 
-## Current status
-- Homepage: in progress
-- Layout & styling: ongoing
-- Features & projects: coming soon
+It’s not super polished yet, but it’s real, it’s messy, and it’s where I’m growing as a web dev 💻
 
 ## Tech used
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)

@@ -11,11 +11,11 @@ It’s not super polished yet, but it’s real, it’s messy, and it’s where I
 
 ## 👻 Horror Mode
 
-   Yes… there’s a Horror Mode too!
-   Step into the spooky side of my project if you dare 😈
-   Special text, creepy animations, and fun interactive surprises await
-   Just a playful experiment to mix web skills with storytelling.
-   It’s my way of adding some personality and fun to the project—because why not make learning a little scary too? 🕷️
+- Yes… there’s a Horror Mode too!
+   - Step into the spooky side of my project if you dare 😈
+   - Special text, creepy animations, and fun interactive surprises await
+   - Just a playful experiment to mix web skills with storytelling.
+ It’s my way of adding some personality and fun to the project—because why not make learning a little scary too? 🕷️
 
 ## Tech used
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)

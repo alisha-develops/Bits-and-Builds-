@@ -11,7 +11,7 @@ It’s not super polished yet, but it’s real, it’s messy, and it’s where I
 
 ## 👻 Horror Mode
 
-- Yes… there’s a Horror Mode too!
+ Yes… there’s a Horror Mode too!
    - Step into the spooky side of my project if you dare 😈
    - Special text, creepy animations, and fun interactive surprises await
    - Just a playful experiment to mix web skills with storytelling.

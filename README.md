@@ -2,12 +2,15 @@
 
 Bits & Builds is a personal learning space where I experiment with web development, small ideas, and creative builds.
 
+## Features
 
-## What this repository is
-Imagine a place where all my small experiments, web bits, and fun builds live together.. that’s this project.
-It’s kind of like a digital scrapbook of ideas, code snippets, layouts, styles, and tiny apps.
+- Retro Game UI: Uses pixel-inspired fonts like Press Start 2P, bold color contrasts, and a blue-cyan aesthetic for a nostalgic feel.
 
-It’s not super polished yet, but it’s real, it’s messy, and it’s where I’m growing as a web dev 💻
+- Interactive Navigation: Smooth scrolling, hover effects, and clickable project cards make the site feel alive.
+
+- Horror Mode: Flip the vibe entirely with a darker theme, new visuals, and music for those who want a twist.
+
+- Personal Touch: Includes my projects, goals, and interactive elements to explore my work in a playful way.
 
 ## 👻 Horror Mode
 

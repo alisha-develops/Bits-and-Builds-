@@ -593,14 +593,14 @@ body.horror-mode {
 }
 
 body.horror-mode header {
-    background-image: url("images/horrornight.jpg");
+    background-image: url("horrornight.jpg");
     background-size: cover;
     background-position: center;
     border-color: #8b0000;
 }
 
 body.horror-mode footer {
-    background-image: url("images/horrornight.jpg");
+    background-image: url("horrornight.jpg");
     background-size: cover;
     background-position: center;
     border-color: #5a0010;
@@ -613,7 +613,7 @@ body.horror-mode #section3 {
 }
 
 body.horror-mode .profilep {
-    content: url("images/horrorme.png");
+    content: url("horrorme.png");
     border-color: #8b0000;
     box-shadow: 6px 6px 0px #5a0010;
 }
@@ -694,7 +694,6 @@ body.horror-mode .cards {
     box-shadow: 4px 4px 0px #5a0010;
 }
 
-/* make the project container itself change when horror mode is active */
 body.horror-mode .project.container {
     background-color: #1a0005;
     border-color: #5a0010;
@@ -843,5 +842,6 @@ body.horror-mode .projectcontainer {
         font-size: 1rem;
     }
 }
+
 
 

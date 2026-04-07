@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #e8f4f8;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f0f1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #a8edea;
+}
+
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.4rem;
+    color: #a8edea;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px #0f3460;
+}
+
+h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.9rem;
+    color: #c9b8ff;
+    line-height: 1.7;
+}
+
+h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #ffd6a5;
+    line-height: 1.8;
+}
+
+h5 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 3px;
+    color: #8bb8cc;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: #e8f4f8;
+    line-height: 1.85;
+    text-align: left;
+}
+
+header {
+    min-height: 100vh;
+    background-color: #0d0d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px 40px 60px;
+    position: relative;
+    border-bottom: 2px solid #a8edea;
+}
+
+header h1.blob {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2rem;
+    color: #a8edea;
+    text-shadow: 4px 4px 0px #0f3460;
+    background: none;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    margin: 0;
+    animation: glow-pulse 3s ease-in-out infinite;
+    max-width: 100%;
+    padding: 0;
+}
+
+@keyframes glow-pulse {
+    0%   { text-shadow: 2px 2px 0px #0f3460; }
+    50%  { text-shadow: 4px 4px 0px #0f3460, 0px 0px 20px #a8edea; }
+    100% { text-shadow: 2px 2px 0px #0f3460; }
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    background: transparent;
+    margin: 0;
+}
+
+.navB {
+    background-color: transparent;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    border: 2px solid #a8edea;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.navB:hover {
+    background-color: #a8edea;
+}
+
+nav .navB a {
+    color: #a8edea;
+    text-decoration: none;
+}
+
+.navB:hover a {
+    color: #1a1a2e;
+}
+
+.dot-nav {
+    position: fixed;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 1000;
+    background: transparent;
+    border: none;
+    padding: 8px 4px;
+}
+
+.dot-nav a {
+    width: 10px;
+    height: 10px;
+    background-color: #2d4a6e;
+    border: 2px solid #8bb8cc;
+    display: block;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.dot-nav a:hover {
+    background-color: #a8edea;
+    border-color: #a8edea;
+    transform: scale(1.3);
+}
+
+
+/* sections */
+main > section {
+    min-height: 100vh;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section1 {
+    background-color: #1a1a2e;
+}
+
+#section2 {
+    background-color: #16213e;
+}
+
+#section3 {
+    background-color: #1a1a2e;
+}
+
+#section3 p {
+    text-align: center;
+    color: #8bb8cc;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.65rem;
+    line-height: 2;
+}
+
+/* goals sec */
+.goal-card {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #011c27;
+  color: white;
+}
+
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg,#a8edea,#fed6e3);
+  transition: width 0.4s ease;
+}
+
+li {
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* about */
+.profile-layout {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.profile-layout .profilep {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid #a8edea;
+    flex-shrink: 0;
+    display: block;
+    margin: 0;
+    animation: floaty 4s ease-in-out infinite;
+    box-shadow: 6px 6px 0px #2d4a6e;
+}
+
+@keyframes floaty {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 220px;
+}
+
+.profile-text h1 {
+    margin-bottom: 14px;
+}
+
+.profile-text .myintro {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #ffb3c6;
+    text-align: left;
+    margin-bottom: 16px;
+    line-height: 2;
+    display: block;
+}
+
+.profile-text p {
+    color: #c8dde8;
+    font-size: 0.95rem;
+    border-left: 3px solid #c9b8ff;
+    padding-left: 16px;
+}
+
+.blob {
+    display: block;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.1rem;
+    color: #a8edea;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    animation: none;
+    max-width: 100%;
+    line-height: 1.7;
+    text-shadow: 3px 3px 0px #0f3460;
+}
+
+.bubblybox {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 24px 30px;
+    background-color: #0f1e3a;
+    border: 2px solid #c9b8ff;
+    box-shadow: 5px 5px 0px #c9b8ff;
+}
+
+.bubblybox {
+    text-align: left;
+    line-height: 1.9;
+    color: #c8dde8;
+}
+
+/*sub headings*/
+.HC {
+    display: block;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: #ffd6a5;
+    text-align: center;
+    margin-bottom: 28px;
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 2;
+}
+
+/* horror mode button*/
+.horrormode {
+    text-align: left;
+    margin-top: 28px;
+}
+
+.horrormode button,
+button#horror-btn {
+    background-color: transparent;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: 2px solid #ffb3c6;
+    color: #ffb3c6;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.horrormode button:hover,
+button#horror-btn:hover {
+    background-color: #ffb3c6;
+    color: #1a1a2e;
+}
+
+/* project cards */
+.project.container::-webkit-scrollbar {
+    height: 6px;
+}
+.project.container::-webkit-scrollbar-track {
+    background: #0d0d1f;
+}
+.project.container::-webkit-scrollbar-thumb {
+    background: #a8edea;
+}
+
+.project.container {
+    background-color: #0d0d1f;
+    border: 2px solid #a8edea;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.cards {
+    box-shadow: 4px 4px 0px #2d4a6e;
+    width: 600px;
+    max-height: 85vw;
+    flex: 0 0 auto;
+    background-color: #0f1e3a;;
+    border: 2px solid #2d4a6e;;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;   
+    object-fit: cover;
+    display: block;  
+    border: 2px solid #2d4a6e;
+}
+.cards:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #a8edea;
+    border-color: #a8edea;
+}
+
+.cards h3,
+.success {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    color: #ffd6a5;
+    text-align: center;
+    margin-top: 4px;
+    line-height: 1.9;
+}
+
+.techstack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+p.techstack {
+    text-align: center;
+}
+
+.techstack span {
+    padding: 5px 12px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    line-height: 1.6;
+    border: 2px solid;
+    background-color: transparent;
+}
+
+.techstack span:nth-child(1) {
+    color: #f16529;
+    border-color: #f16529;
+}
+.techstack span:nth-child(2) {
+    color: #7eb3ff;
+    border-color: #7eb3ff;
+}
+.techstack span:nth-child(3) {
+    color: #fdffb6;
+    border-color: #fdffb6;
+}
+
+.projectaccessbtn {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    padding: 10px 16px;
+    border: 2px solid #a8edea;
+    background-color: transparent;
+    cursor: pointer;
+    color: #a8edea;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.15s, color 0.15s;
+    margin: 4px;
+    line-height: 1.6;
+}
+
+.projectaccessbtn:hover {
+    background-color: #a8edea;
+    color: #1a1a2e;
+}
+
+.CME {
+    background: none;
+    border: none;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    display: block;
+    animation: none;
+}
+/* footer detailing is here*/
+footer {
+    padding: 60px;
+    background-color: #0d0d1f;
+    border: none;
+    border-top: 2px solid #2d4a6e;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+footer h5 {
+    color: #8bb8cc;
+    margin-bottom: 20px;
+}
+
+.footerbtncontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.gmail, .linkedin, .github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #2d4a6e;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.gmail:hover {
+    background-color: #ffb3c6;
+    border-color: #ffb3c6;
+}
+.linkedin:hover {
+    background-color: #7eb3ff;
+    border-color: #7eb3ff;
+}
+.github:hover {
+    background-color: #c9b8ff;
+    border-color: #c9b8ff;
+}
+
+.gmail a, .linkedin a, .github a {
+    color: #e8f4f8;
+    text-decoration: none;
+}
+
+.gmail:hover a, .linkedin:hover a, .github:hover a {
+    color: #1a1a2e;
+}
+
+.gmail-icon, .linkedin-icon, .github-icon {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+
+/* music icon */
+.music-icon {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    font-size: 18px;
+    background-color: #0f3460;
+    border: 2px solid #a8edea;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 0px #a8edea;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.15s;
+}
+
+.music-icon:hover {
+    transform: translate(-2px, -2px);
+}
+
+.is-playing {
+    animation: pulse 1.8s infinite;
+    border-color: #fdffb6;
+    box-shadow: 3px 3px 0px #fdffb6;
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/*horror more detailing */
+body.horror-mode {
+    background-color: #0a0005;
+    color: #ff4444;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.horror-mode header {
+    background-image: url("images/horrornight.jpg");
+    background-size: cover;
+    background-position: center;
+    border-color: #8b0000;
+}
+
+body.horror-mode footer {
+    background-image: url("images/horrornight.jpg");
+    background-size: cover;
+    background-position: center;
+    border-color: #5a0010;
+}
+
+body.horror-mode #section1,
+body.horror-mode #section2,
+body.horror-mode #section3 {
+    background-color: #110005;
+}
+
+body.horror-mode .profilep {
+    content: url("images/horrorme.png");
+    border-color: #8b0000;
+    box-shadow: 6px 6px 0px #5a0010;
+}
+
+body.horror-mode h1,
+body.horror-mode h2,
+body.horror-mode h3,
+body.horror-mode p,
+body.horror-mode .blob,
+body.horror-mode .HC,
+body.horror-mode .success,
+body.horror-mode .connect {
+    color: #ff4444;
+    text-shadow: 0px 0px 8px #8b0000;
+}
+
+body.horror-mode .welcome {
+    color: #631717;
+    text-shadow: 0px 0px 8px #8b0000;
+    background-color: #c9bf85;
+    border: 2px solid black;
+}
+
+
+body.horror-mode header h1.blob {
+    animation: horror-glow 2s ease-in-out infinite;
+}
+
+@keyframes horror-glow {
+    0%   { text-shadow: 4px 4px 0px #3a0000; }
+    50%  { text-shadow: 4px 4px 0px #3a0000, 0px 0px 30px #ff0000; }
+    100% { text-shadow: 4px 4px 0px #3a0000; }
+}
+
+body.horror-mode a {
+    color: #ff4444;
+}
+
+body.horror-mode .bubblybox {
+    background-color: #1a0005;
+    border-color: #8b0000;
+    box-shadow: 4px 4px 0px #8b0000;
+}
+
+body.horror-mode .bubblybox {
+    color: #ffaaaa;
+}
+
+body.horror-mode .navB {
+    border-color: #8b0000;
+    background-color: #0a0005;
+}
+
+body.horror-mode nav .navB a {
+    color: #ff4444;
+}
+
+body.horror-mode .navB:hover {
+    background-color: #8b0000;
+}
+
+body.horror-mode .navB:hover a {
+    color: #ffdddd;
+}
+
+body.horror-mode .dot-nav a {
+    background-color: #5a0010;
+    border-color: #8b0000;
+}
+
+body.horror-mode .dot-nav a:hover {
+    background-color: #ff0000;
+}
+
+body.horror-mode .cards {
+    background-color: #1a0005;
+    border-color: #5a0010;
+    box-shadow: 4px 4px 0px #5a0010;
+}
+
+body.horror-mode .project.container {
+    background-color: #08140a;
+    border-color: #5a0010;
+}
+
+body.horror-mode .cards:hover {
+    box-shadow: 7px 7px 0px #8b0000;
+    border-color: #8b0000;
+}
+
+body.horror-mode .projectaccessbtn {
+    border-color: #8b0000;
+    color: #ff4444;
+}
+
+body.horror-mode .projectaccessbtn:hover {
+    background-color: #8b0000;
+    color: #ffdddd;
+}
+
+body.horror-mode .techstack span:nth-child(1) {
+    color: #ff6644;
+    border-color: #ff6644;
+}
+body.horror-mode .techstack span:nth-child(2) {
+    color: #ff4444;
+    border-color: #ff4444;
+}
+body.horror-mode .techstack span:nth-child(3) {
+    color: #ffaaaa;
+    border-color: #ffaaaa;
+}
+
+body.horror-mode .horrormode button,
+body.horror-mode button#horror-btn {
+    border-color: #8b0000;
+    color: #ff4444;
+}
+
+body.horror-mode .horrormode button:hover,
+body.horror-mode button#horror-btn:hover {
+    background-color: #8b0000;
+    color: #ffdddd;
+}
+
+body.horror-mode .gmail,
+body.horror-mode .linkedin,
+body.horror-mode .github {
+    border-color: #5a0010;
+    background-color: #0a0005;
+}
+
+body.horror-mode .gmail:hover,
+body.horror-mode .linkedin:hover,
+body.horror-mode .github:hover {
+    background-color: #5a0010;
+    border-color: #8b0000;
+}
+
+body.horror-mode .gmail a,
+body.horror-mode .linkedin a,
+body.horror-mode .github a {
+    color: #ffaaaa;
+}
+
+body.horror-mode .gmail:hover a,
+body.horror-mode .linkedin:hover a,
+body.horror-mode .github:hover a {
+    color: #ffdddd;
+}
+
+body.horror-mode .music-icon {
+    background-color: #3a0000;
+    border-color: #8b0000;
+    box-shadow: 3px 3px 0px #8b0000;
+}
+
+body.horror-mode #section3 p {
+    color: #8b3030;
+}
+
+body.horror-mode .goal-card {
+    background-color: #08140a;
+}
+
+/* responsive site */
+@media (max-width: 768px) {
+    .cards {
+        width: 260px;
+        padding: 14px;
+    }
+    nav {
+        gap: 4px;
+    }
+    .navB {
+        padding: 6px 10px;
+        font-size: 0.48rem;
+    }
+    main > section {
+        padding: 80px 20px 40px 20px;
+    }
+    header {
+        padding: 80px 20px 40px 20px;
+    }
+    footer {
+        padding: 40px 20px;
+    }
+    .profile-layout .profilep {
+        width: 160px;
+        height: 160px;
+    }
+    header h1.blob {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .techstack {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerbtncontainer {
+        gap: 8px;
+    }
+    .gmail, .linkedin, .github {
+        padding: 8px 12px;
+    }
+    .navB {
+        font-size: 0.42rem;
+        padding: 5px 8px;
+    }
+    .profile-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-text .myintro,
+    .profile-text p {
+        text-align: center;
+        border-left: none;
+        border-top: 3px solid #c9b8ff;
+        padding-left: 0;
+        padding-top: 12px;
+    }
+    header h1.blob {
+        font-size: 1rem;
+    }
+}

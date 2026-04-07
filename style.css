@@ -122,15 +122,13 @@ nav {
     border: 2px solid #a8edea;
     cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
+    display: inline-block;
+    text-decoration: none;
+    color: #a8edea;
 }
 
 .navB:hover {
     background-color: #a8edea;
-}
-
-nav .navB a {
-    color: #a8edea;
-    text-decoration: none;
 }
 
 .navB:hover a {
@@ -197,12 +195,27 @@ main > section {
 }
 
 /* goals sec */
+#goals-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px 0;
+}
+
 .goal-card {
-  max-width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-  background: #011c27;
-  color: white;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #011c27;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
 }
 
 .progress-container {
@@ -214,7 +227,7 @@ main > section {
   margin: 10px 0;
 }
 
-#progressBar {
+.progressBar {
   height: 100%;
   width: 0%;
   background: linear-gradient(90deg,#a8edea,#fed6e3);
@@ -518,6 +531,8 @@ footer h5 {
     font-size: 0.5rem;
     cursor: pointer;
     transition: background-color 0.15s, border-color 0.15s;
+    text-decoration: none;
+    color: inherit;
 }
 
 .gmail:hover {
@@ -531,11 +546,6 @@ footer h5 {
 .github:hover {
     background-color: #c9b8ff;
     border-color: #c9b8ff;
-}
-
-.gmail a, .linkedin a, .github a {
-    color: #e8f4f8;
-    text-decoration: none;
 }
 
 .gmail:hover a, .linkedin:hover a, .github:hover a {
@@ -779,7 +789,6 @@ body.horror-mode .goal-card {
     background-color: #08140a;
 }
 
-/* responsive site */
 @media (max-width: 768px) {
     .cards {
         width: 260px;

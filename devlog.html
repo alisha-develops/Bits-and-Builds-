@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="devlog.css">
+    <title>Disaster Log — Alisha Shaikh</title>
+</head>
+
+<body>
+
+    <audio id="myAudio" src="music.mp3"></audio>
+    <div id="music-status" class="music-icon">🎵</div>
+    
+    <header>
+        <a href="index.html" class="site-title"></a>
+        <nav>
+            <a class="navB" href="index.html">↩</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>DISASTER LOG</h1>
+        <p class="hero-sub">
+            Every build breaks before it works. This is where I document the breaks — what failed, how long I was stuck, and what changed after. No cleanup. No retroactive wisdom. Just what actually happened.
+        </p>
+    </div>
+
+    <main>
+
+        <!-- entry 1 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">BITS & BUILDS — THE SITE NOBODY COULD NAVIGATE</span>
+                <span class="entry-tag tag-failure">RESOLVED</span>
+            </div>
+            <hr class="entry-divider">
+
+            <span class="entry-section-label">what broke</span>
+            <p>
+                Shipped my portfolio and immediately got the same note from multiple reviewers: the navbar buttons didn't work. Projects, About, Goals — all broken. I'd been testing it myself the whole time and somehow never caught it.
+            </p>
+
+            <div class="highlight-box">
+                "The topbar isn't fully working, the music button isn't working either, when I click a project, I don't get redirected." — Voter #8
+            </div>
+
+            <span class="entry-section-label">what changed</span>
+            <p>
+                I learned that testing your own work is almost useless because you already know where to click. Fixed the nav links, music toggle, and project redirects. But the real lesson was that testing your own work is almost useless because you already know where to click. Now I always get at least one fresh pair of eyes before I ship anything.
+            </p>
+        </div>
+
+        <!-- entru 2 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">EGG TIMER — WHEN AI WRITES YOUR CODE AND YOU DON'T UNDERSTAND IT</span>
+                <span class="entry-tag tag-failure">RESOLVED</span>
+            </div>
+            <hr class="entry-divider">
+
+            <span class="entry-section-label">what broke</span>
+            <p>
+                I wanted pixel art animations — little eggs bobbing and flickering based on the timer stage. Canvas animation was new territory so I asked AI to generate it. It worked. But I had no idea what any of it was doing, and it didn't match my codebase at all. I'd shipped a feature I couldn't explain
+            </p>
+
+            <div class="highlight-box">
+                I went through the code properly and made sure I understood what each part was doing before I let it stay in my project.
+            </div>
+
+            <span class="entry-section-label">what changed</span>
+            <p>
+                I rewrote the entire animation in my own style after learning how <code>requestAnimationFrame</code> creates a smooth loop, how <code>Math.sin</code> generates the bobbing motion, and how <code>clearRect</code> wipes the canvas each frame. Then I rewrote it from scratch to match my own code. The final version does exactly the same thing as the AI-generated one — but now I can explain every line. Using AI to understand something is fine. Using AI to ship something you can't explain is a different thing entirely, and I won't do that again.
+            </p>
+        </div>
+
+        <!-- entry 3 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">SATSCOPE — BUILDING A 3D SATELLITE IN THREE.JS (IN PROGRESS)</span>
+                <span class="entry-tag tag-inprogress">IN PROGRESS — 59%</span>
+            </div>
+            <hr class="entry-divider">
+
+            <span class="entry-section-label">what i'm building</span>
+            <p>
+                An interactive 3D satellite explorer using Three.js — a full satellite built from code and geometry, orbiting a textured Earth with 6,000 scattered background stars. Each component (solar panels, antenna dish, thrusters, payload, star sensor) is clickable and shows real information about what it does.
+            </p>
+
+            <span class="entry-section-label">bugs so far</span>
+            <p>
+                Mostly typos and wrong variable names in the geometry setup. The antenna dish shape is built using <code>LatheGeometry</code> — you give it a list of points tracing a curve, and Three.js spins it into a 3D bowl automatically. Getting the curve coordinates right took a lot of trial-and-error on position and size values. I'm getting faster at spotting these, but they still eat time.
+            </p>
+
+            <div class="highlight-box">
+                Instead of writing the same thruster code four times I put it in one function and called it four times with different positions. If I want to change anything, I only change it in one place.
+            </div>
+
+            <span class="entry-section-label">what i'm learning</span>
+            <p>
+                Three.js forces you to think in 3D space — position, rotation, scale on three axes, and getting things to sit correctly relative to each other is genuinely hard. Biggest lesson so far: repetition in code is a warning sign. When I found myself writing the same thruster geometry four times, I stopped and refactored. That instinct to clean up before moving forward is something I'm actively building.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>more devlogs incoming as i build more things —<br><br>
+        <a href="index.html">← back to main site</a> &nbsp;|&nbsp; <a href="https://github.com/alisha-develops">GitHub</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

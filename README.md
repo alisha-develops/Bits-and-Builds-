@@ -1,6 +1,6 @@
-# Bits & Builds 🧩
+# Bits & Builds!!
 
-Bits & Builds is a personal learning space where I experiment with web development, small ideas, and creative builds.
+Bits & Builds is my personal learning space where I experiment with web development, small ideas, and creative builds.
 
 ## Features
 
@@ -12,14 +12,13 @@ Bits & Builds is a personal learning space where I experiment with web developme
 
 - Personal Touch: Includes my projects, goals, and interactive elements to explore my work in a playful way.
 
-## 👻 Horror Mode
+##  Horror Mode
 
  Yes… there’s a Horror Mode too!
-   - Step into the spooky side of my project if you dare 😈
    - Special text, creepy animations, and fun interactive surprises await
    - Just a playful experiment to mix web skills with storytelling.
    
- It’s my way of adding some personality and fun to the project—because why not make learning a little scary too? 🕷️
+ It’s my way of adding some personality and fun!
 
 ## Tech used
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -27,5 +26,5 @@ Bits & Builds is a personal learning space where I experiment with web developme
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## Author
-Built by Alisha 🌱  
-Learning, experimenting, and improving step by step.
+Built by Alisha  
+to build more cool stuff and improve step by step :)
